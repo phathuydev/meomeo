@@ -1,0 +1,75 @@
+<?php
+$routes['default_controller'] = 'home';
+// Đường dẫn ảo => đường dẫn thật
+// Route Admin
+$routes['admin'] = 'admin/dashboard';
+// Tài khoản
+$routes['dang-nhap'] = 'admin/signin';
+$routes['dang-xuat-admin'] = 'admin/signin/signout';
+// Người dùng
+$routes['danh-sach-nguoi-dung/.+-(\d+)'] = 'admin/manage/user/index/$1';
+$routes['them-quan-tri-vien'] = 'admin/manage/user/add_user';
+$routes['sua-nguoi-dung/.+-(\d+)/.+-(\d+)'] = 'admin/manage/user/edit_user/$1/$2';
+$routes['chi-tiet-nguoi-dung/.+-(\d+)/.+-(\d+)'] = 'admin/manage/user/detail_user/$1/$2';
+$routes['tim-kiem-nguoi-dung/.+-(\d+)'] = 'admin/manage/user/search_user/$1';
+// Danh mục sản phẩm
+$routes['danh-sach-danh-muc-san-pham/trang-(\d+)'] = 'admin/manage/categories_product/index/$1';
+$routes['tim-kiem-danh-muc-san-pham/.+-(\d+)'] = 'admin/manage/categories_product/categories_search/$1';
+$routes['them-danh-muc-san-pham'] = 'admin/manage/categories_product/categories_add';
+$routes['sua-danh-muc-san-pham/.+-(\d+)/.+-(\d+)'] = 'admin/manage/categories_product/categories_edit/$1/$2';
+$routes['chi-tiet-danh-muc-san-pham/.+-(\d+)/.+-(\d+)'] = 'admin/manage/categories_product/categories_detail/$1/$2';
+// Danh mục bài viết
+$routes['danh-sach-danh-muc-baiviet'] = 'admin/manage/categories';
+$routes['tim-kiem-danh-muc-baiviet'] = 'admin/manage/categories/categories_search';
+$routes['them-danh-muc-baiviet'] = 'admin/manage/categories/categories_add';
+$routes['sua-danh-muc-baiviet'] = 'admin/manage/categories/categories_edit';
+$routes['chi-tiet-danh-muc-baiviet'] = 'admin/manage/categories/categories_detail';
+// Sản phẩm
+$routes['danh-sach-san-pham'] = 'admin/manage/product';
+$routes['san-pham-chi-tiet'] = 'admin/manage/product/detail_product';
+$routes['them-san-pham'] = 'admin/manage/product/add_product';
+$routes['sua-san-pham'] = 'admin/manage/product/edit_product';
+$routes['chi-tiet-bang-ron-san-pham'] = 'admin/manage/banner_product/banner_product_detail';
+$routes['sua-bang-ron-san-pham'] = 'admin/manage/banner_product/banner_product_edit';
+$routes['tim-kiem-san-pham'] = 'admin/manage/product/product_search';
+// Đơn hàng
+$routes['tim-kiem-don-hang'] = 'admin/manage/order/order_search';
+$routes['danh-sach-don-hang'] = 'admin/manage/order';
+$routes['xem-them-don-hang'] = 'admin/manage/order/order_more';
+$routes['cap-nhat-trang-thai-don-hang'] = 'admin/manage/order/order_edit';
+$routes['chi-tiet-don-hang'] = 'admin/manage/order/order_detail';
+// Bình luận
+$routes['danh-sach-binh-luan'] = 'admin/manage/comments';
+$routes['binh-luan-tim-kiem'] = 'admin/manage/comments/comment_search';
+// Bài viết
+$routes['danh-sach-baiviet'] = 'admin/manage/post';
+$routes['baiviet-chi-tiet'] = 'admin/manage/post/detail_post';
+$routes['them-baiviet'] = 'admin/manage/post/add_post';
+$routes['sua-baiviet'] = 'admin/manage/post/edit_post';
+$routes['tim-kiem-baiviet'] = 'admin/manage/post/search_post';
+// Băng rôn trang chủ
+$routes['danh-sach-bang-ron'] = 'admin/manage/banner';
+$routes['them-bang-ron'] = 'admin/manage/banner/banner_home_add';
+$routes['chinh-sua-bang-ron'] = 'admin/manage/banner/banner_home_edit';
+// Mã giảm giá$routes['tim-kiem-giam-gia'] = 'admin/manage/discount/discount_search';
+$routes['danh-sach-giam-gia'] = 'admin/manage/discount';
+$routes['chi-tiet-giam-gia'] = 'admin/manage/discount/discount_detail';
+$routes['them-giam-gia'] = 'admin/manage/discount/discount_add';
+$routes['sua-giam-gia'] = 'admin/manage/discount/discount_edit';
+// Liên hệ
+$routes['danh-sach-lienhe'] = 'admin/manage/contact';
+// Route Client
+$routes['trang-chu'] = 'home';
+$routes['cua-hang'] = 'client/product';
+$routes['chi-tiet-san-pham'] = 'client/product/product_detail';
+$routes['san-pham-danh-muc'] = 'client/product/product_category';
+$routes['san-pham-tim-kiem'] = 'client/product/product_search';
+$routes['danh-sach-bai-viet'] = 'client/blog';
+$routes['bai-viet-chi-tiet'] = 'client/blog/blog_detail';
+$routes['lien-he'] = 'client/contact';
+$routes['ma-giam-gia'] = 'client/sale';
+$routes['gio-hang'] = 'client/cart';
+$routes['thanh-toan'] = 'client/cart/checkout';
+$routes['cam-on-da-mua-hang'] = 'client/cart/thank';
+$routes['ho-so'] = 'client/profile';
+$routes['ho-so-nguoi-khac'] = 'client/profile/profile_orther';
