@@ -19,11 +19,11 @@ $routes['them-danh-muc-san-pham'] = 'admin/manage/categories_product/categories_
 $routes['sua-danh-muc-san-pham/.+-(\d+)/.+-(\d+)'] = 'admin/manage/categories_product/categories_edit/$1/$2';
 $routes['chi-tiet-danh-muc-san-pham/.+-(\d+)/.+-(\d+)'] = 'admin/manage/categories_product/categories_detail/$1/$2';
 // Danh mục bài viết
-$routes['danh-sach-danh-muc-baiviet'] = 'admin/manage/categories';
-$routes['tim-kiem-danh-muc-baiviet'] = 'admin/manage/categories/categories_search';
-$routes['them-danh-muc-baiviet'] = 'admin/manage/categories/categories_add';
-$routes['sua-danh-muc-baiviet'] = 'admin/manage/categories/categories_edit';
-$routes['chi-tiet-danh-muc-baiviet'] = 'admin/manage/categories/categories_detail';
+$routes['danh-sach-danh-muc-baiviet/trang-(\d+)'] = 'admin/manage/categories_post/index/$1';
+$routes['tim-kiem-danh-muc-baiviet/.+-(\d+)'] = 'admin/manage/categories_post/categories_search/$1';
+$routes['them-danh-muc-baiviet'] = 'admin/manage/categories_post/categories_add';
+$routes['sua-danh-muc-baiviet/.+-(\d+)/.+-(\d+)'] = 'admin/manage/categories_post/categories_edit/$1/$2';
+$routes['chi-tiet-danh-muc-baiviet/.+-(\d+)/.+-(\d+)'] = 'admin/manage/categories_post/categories_detail/$1/$2';
 // Sản phẩm
 $routes['danh-sach-san-pham'] = 'admin/manage/product';
 $routes['san-pham-chi-tiet'] = 'admin/manage/product/detail_product';

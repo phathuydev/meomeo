@@ -16,7 +16,7 @@
           <span class="d-none d-lg-inline-flex">Liên hệ</span>
         </a>
         <?php if (!empty($a = 0)) : ?>
-          <div class="dropdown-menu dropdown-menu-end bg-secondary border-0 rounded-0 rounded-bottom m-0 anthanhcuon2">
+          <div class="dropdown-menu dropdown-menu-end bg-secondary border-info rounded-0 rounded-bottom m-0 anthanhcuon2">
             <input type="hidden" value="">
             <button type="submit" name="" class="dropdown-item">
               <div class="d-flex align-items-center">
@@ -34,7 +34,7 @@
             <a href="#" class="dropdown-item text-center">Xem tất cả liên hệ</a>
           </div>
         <?php else : ?>
-          <div class="dropdown-menu dropdown-menu-end bg-secondary border-0 rounded-0 rounded-bottom m-0 anthanhcuon2">
+          <div class="dropdown-menu dropdown-menu-end bg-secondary border-info rounded-0 rounded-bottom m-0 anthanhcuon2">
             <p class="dropdown-item text-center text-danger">Không có liên hệ mới nào</p>
           </div>
         <?php endif ?>
@@ -49,7 +49,7 @@
           <span class="d-none d-lg-inline-flex">Bình luận</span>
         </a>
         <?php if (!empty($a = 0)) : ?>
-          <div class="dropdown-menu dropdown-menu-end bg-secondary border-0 rounded-0 rounded-bottom m-0 anthanhcuon2">
+          <div class="dropdown-menu dropdown-menu-end bg-secondary border-info rounded-0 rounded-bottom m-0 anthanhcuon2">
             <input type="hidden" value="">
             <button type="submit" name="" class="dropdown-item">
               <div class="d-flex align-items-center">
@@ -67,7 +67,7 @@
             <a href="#" class="dropdown-item text-center">Xem tất cả bình luận</a>
           </div>
         <?php else : ?>
-          <div class="dropdown-menu dropdown-menu-end bg-secondary border-0 rounded-0 rounded-bottom m-0 anthanhcuon2">
+          <div class="dropdown-menu dropdown-menu-end bg-secondary border-info rounded-0 rounded-bottom m-0 anthanhcuon2">
             <p class="dropdown-item text-center text-danger">Không có bình luận mới nào</p>
           </div>
         <?php endif ?>
@@ -82,7 +82,7 @@
           <span class="d-none d-lg-inline-flex">Đơn hàng</span>
         </a>
         <?php if (!empty($a = 0)) : ?>
-          <div class="dropdown-menu dropdown-menu-end bg-secondary border-0 rounded-0 rounded-bottom m-0 anthanhcuon2">
+          <div class="dropdown-menu dropdown-menu-end bg-secondary border-info rounded-0 rounded-bottom m-0 anthanhcuon2">
             <input type="hidden" value="">
             <button type="submit" name="" class="dropdown-item">
               <div class="d-flex align-items-center">
@@ -100,7 +100,7 @@
             <a href="#" class="dropdown-item text-center">Xem tất cả đơn hàng</a>
           </div>
         <?php else : ?>
-          <div class="dropdown-menu dropdown-menu-end bg-secondary border-0 rounded-0 rounded-bottom m-0 anthanhcuon2">
+          <div class="dropdown-menu dropdown-menu-end bg-secondary border-info rounded-0 rounded-bottom m-0 anthanhcuon2">
             <p class="dropdown-item text-center text-danger">Không có đơn hàng mới nào</p>
           </div>
         <?php endif ?>
@@ -111,7 +111,7 @@
         <img class="rounded-circle me-lg-2" src="<?= _WEB_ROOT . '/' . $getUserAdmin['anhKhachHang'] ?>" alt="" style="width: 40px; height: 40px;">
         <span class="d-none d-lg-inline-flex"><?= $getUserAdmin['tenKhachHang'] ?></span>
       </a>
-      <div class="dropdown-menu dropdown-menu-end bg-secondary border-0 rounded-0 rounded-bottom m-0">
+      <div class="dropdown-menu dropdown-menu-end bg-secondary border-info rounded-0 rounded-bottom m-0">
         <a href="<?= _WEB_ROOT ?>/trang-chu" class="dropdown-item text-white">Trang người dùng</a>
         <a href="<?= _WEB_ROOT ?>/dang-xuat-admin" class="dropdown-item text-white">Đăng xuất</a>
       </div>
